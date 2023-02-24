@@ -98,7 +98,7 @@ class ServerCore(object):
                 current_transactions = self.tp.get_stored_transactions()
                 has_same = False
                 if new_transaction in current_transactions:
-                    print("this is already pooled transaction")
+                    print("this is already pooled transaction:", t)
                     return
 
                 if not is_core:
